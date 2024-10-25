@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+:root {
+    font-family: Heebo;
+}
+
+#main-wrapper {
+    position: relative;
+    display: flex;
+    min-width: 100vw;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: safe center;
+    padding-inline: 180px;
+    gap: 180px;
+}
+
+#smartphone-img {
+    width: 535px;
+}
+
+
+.main-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    flex-grow: 1;
+    max-width: 850px;
+    line-height: 1.5;
+}
+
+header {
+    grid-column-end: span 2;
+}
+
+header h1 {
+    color: #FDBD03;
+    font-size: 66px;
+    font-weight: 900;
+}
+
+header p {
+    color: #020253;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.main-form .pair,
+.main-form .pair-text-area {
+    display: flex;
+    flex-direction: column;
+    color: #2C2C2C;
+}
+
+.main-form .pair label,
+.main-form .pair-text-area label {
+    font-weight: 800;
+}
+
+.main-form .pair-text-area {
+    grid-column: 1 / 3;
+}
+
+#full-name,
+#email {
+    display: flex;
+    background-color: #E5EEFF;
+    border: 4px #FDBD03;
+    border-style: none none solid none;
+    width: 100%;
+    height: 3em;
+}
+
+#text-area {
+    display: flex;
+    width: 100%;
+    height: 9em;
+    background-color: #E5EEFF;
+    border: 4px #FDBD03;
+    border-style: none none solid none;
+}
+
+#submit-button {
+    margin-top: 70px;
+    background-color: #FDBD03;
+    color: #000;
+    width: 166px;
+    height: 3em;
+    font-family: Heebo;
+    font-weight: bold;
+    font-size: 22px;
+    border: none;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+#submit-button:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+#top-border-line {
+    background-color: #FDBD03;
+    height: 18px;
+    width: 32%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#bottom-border-line {
+    background-color: #FDBD03;
+    height: 18px;
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.contact-links {
+    display: flex;
+    position: absolute;
+    bottom: 5vh;
+    left: 5vw;
+    gap: 40px;
+}
+
+.contact-button {
+    display: grid;
+    place-items: center;
+    font-size: 6em;
+    width: 1em;
+    height: 1em;
+    color: #000;
+    background-color: #FDBD03;
+    border-radius: 50%;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.contact-button:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.contact-button i {
+    font-size: 0.5em;
+}
+
+#whatsapp-button {
+    position: absolute;
+    top: 5vh;
+    left: 5vw;
+}
+
+@media (max-width: 768px) {
+    #main-wrapper {
+        flex-direction: column;
+        padding: 30px;
+        padding-bottom: 200px;
+        gap: 30px;
+    }
+
+    #smartphone-img {
+        width: 80px;
+        padding-block: 2em;
+    }
+
+    .main-form {
+        align-self: stretch;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 40px;
+    }
+
+    header p,
+    #submit-button {
+        font-size: 15px;
+    }
+
+    .main-form .pair label,
+    .main-form .pair-text-area label {
+        font-size: 10px;
+    }
+
+    .main-form .pair,
+    #submit-button {
+        grid-column-end: span 2;
+    }
+
+    #full-name,
+    #email,
+    #text-area {
+        font-size: 0.75em;
+    }
+
+    #submit-button {
+        width: auto;
+        margin: 0;
+    }
+
+    .contact-links {
+        gap: 1em;
+        inset-inline: auto;
+    }
+
+    .contact-button {
+        font-size: 3em;
+    }
+
+    #whatsapp-button {
+        position: fixed;
+    }
+
+    #top-border-line {
+        height: 10px;
+        width: 85%;
+    }
+
+    #bottom-border-line {
+        height: 10px;
+        width: 100%;
+    }
+}
