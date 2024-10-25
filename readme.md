@@ -6,7 +6,7 @@ Phone Number: 052-4490278
 # Portfolio Website
 
 ## About
-This project is a personal portfolio website developed as a final project for my full-stack development studies. It is designed to showcase my work, skills, and experience in web development. The portfolio serves as both a business card for potential employers and clients.
+This project is a personal portfolio website developed as a final project for my HTML + CSS module. It is designed to showcase my work, skills, and experience in web development. The portfolio serves as both a business card for potential employers and clients.
 
 Visit the live site here: [Gaash Web Solutions](https://gaashdaniel.github.io/Gaash-Web-Solutions/).
 
