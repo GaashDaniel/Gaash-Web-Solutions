@@ -46,9 +46,7 @@ input[type="submit"] {
     min-height: 2.5em;
     border-radius: 999px;
     transition: all 0.25s ease-in-out;
-    transition-property: scale,
-        color,
-        background-color;
+    transition-property: scale, color, background-color;
 
     &.primary {
         --text-color: black;
