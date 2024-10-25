@@ -12,7 +12,7 @@
   --alternative-section-shade: #ffffff10;
   --card-shade: #ffffff20;
   --text-shadow: 2px 2px 0.1em rgba(0, 0, 0, 0.8);
-  --geometric-pattern-url: url(../images/body-background-dark-geometric.png);
+  --geometric-pattern-url: url(../images/body-background-dark-geometric.png) ;
 }
 
 body {
@@ -25,6 +25,11 @@ body {
 
 i::before {
   display: inline-block;
+}
+
+button,
+input[type=submit] {
+  cursor: pointer;
 }
 
 .button {
@@ -44,17 +49,14 @@ i::before {
   color: var(--text-color);
   background-color: var(--background-color);
 }
-
 .button.primary {
   --text-color: black;
   --background-color: var(--primary-accent-color);
 }
-
 .button.secondary {
   --text-color: var(--primary-accent-color);
   --background-color: black;
 }
-
 .button:hover {
   color: var(--background-color);
   background-color: var(--text-color);
@@ -68,20 +70,17 @@ i::before {
   gap: 2rem;
   padding-block: 4rem;
 }
-
 .section .section-head {
   font-size: min(4rem, 12vw);
   text-align: center;
   text-shadow: var(--text-shadow);
 }
-
 .section .section-body {
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 2rem;
 }
-
 .section .section-head,
 .section .section-body {
   width: 1280px;
@@ -96,24 +95,20 @@ i::before {
   inset-inline: 0;
   background-color: black;
 }
-
 .nav-bar .navburger {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
 }
-
 .nav-bar ul {
   display: flex;
   justify-content: center;
   list-style: none;
   flex-grow: 1;
 }
-
 .nav-bar ul li {
   text-align: center;
 }
-
 .nav-bar ul li a {
   display: flex;
   align-items: center;
@@ -123,23 +118,19 @@ i::before {
   text-decoration: none;
   color: var(--primary-accent-color);
 }
-
 .nav-bar ul li a:hover {
   background-color: var(--primary-accent-color);
   color: #000;
 }
-
 .nav-bar #site-logo {
   position: absolute;
   top: 0;
   inset-inline-start: 0;
 }
-
 .nav-bar #site-logo img {
   display: block;
   height: var(--nav-bar-height);
 }
-
 .nav-bar #hamburger {
   display: none;
   text-decoration: none;
@@ -151,7 +142,6 @@ i::before {
   justify-content: center;
   align-items: center;
 }
-
 .nav-bar #hamburger i {
   font-size: 0.6em;
 }
@@ -162,14 +152,12 @@ i::before {
   font-size: 1.5rem;
   text-align: center;
 }
-
 .footer .section-body p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 1ch;
 }
-
 .footer .highlight {
   color: var(--primary-accent-color);
   font-weight: 700;
@@ -179,13 +167,11 @@ i::before {
   padding-block: 1rem;
   background-color: var(--alternative-section-shade);
 }
-
 .development-tools i {
   color: var(--primary-accent-color);
   font-size: min(4rem, 10vw);
   transition: scale 0.3s ease-in-out;
 }
-
 .development-tools i:hover {
   scale: 1.25;
 }
@@ -195,20 +181,15 @@ i::before {
     inset-inline-start: auto;
     inset-inline-end: 0;
   }
-
   .nav-bar #hamburger {
     display: flex;
   }
-
   .nav-bar ul {
     display: none;
     flex-direction: column;
   }
-
-  .nav-bar #hamburger:hover+ul,
+  .nav-bar #hamburger:hover + ul,
   .nav-bar ul:active {
     display: flex;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
