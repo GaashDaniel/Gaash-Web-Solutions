@@ -128,13 +128,17 @@ input[type=submit] {
   position: absolute;
   top: 0;
   inset-inline-start: 0;
+  text-decoration: none;
+  gap: 2rem;
 }
 .nav-bar #site-logo img {
   display: block;
   height: var(--nav-bar-height);
 }
 .nav-bar #site-logo .my-name {
+  font-family: "Bonheur Royale", cursive;
   font-size: 2rem;
+  color: var(--primary-accent-color);
 }
 .nav-bar #hamburger {
   display: none;

@@ -144,6 +144,8 @@ input[type="submit"] {
         position: absolute;
         top: 0;
         inset-inline-start: 0;
+        text-decoration: none;
+        gap: 2rem;
 
         img {
             display: block;
@@ -151,7 +153,9 @@ input[type="submit"] {
         }
 
         .my-name {
+            font-family: "Bonheur Royale", cursive;
             font-size: 2rem;
+            color: var(--primary-accent-color);
         }
     }
 
