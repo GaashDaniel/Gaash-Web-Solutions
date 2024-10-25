@@ -73,13 +73,21 @@
   width: 166px;
   height: 50px;
   background: #020253 0% 0% no-repeat padding-box;
-  /* font: normal normal bold 22px/30px Heebo; */
   font-family: Heebo;
   font-size: 22px;
   line-height: 30px;
   letter-spacing: 0.33px;
   color: #ffffff;
   margin-top: 15px;
+}
+
+.form>button:hover {
+  filter: saturate(2);
+}
+
+button,
+input[type="submit"] {
+  cursor: pointer;
 }
 
 @media (max-width: 1200px) {

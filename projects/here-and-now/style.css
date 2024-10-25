@@ -81,6 +81,16 @@ p {
     border-style: none;
 }
 
+#submit-button:hover {
+    color: #fff;
+    background-color: #281EFF;
+}
+
+button,
+input[type="submit"] {
+    cursor: pointer;
+}
+
 @media (max-width: 768px) {
     body {
         padding-inline: 25px;
