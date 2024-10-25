@@ -3,6 +3,8 @@
 ## About
 This project is a personal portfolio website developed as a final project for my full-stack development studies. It is designed to showcase my work, skills, and experience in web development. The portfolio serves as both a business card for potential employers and clients.
 
+Visit the live site here: [Gaash Web Solutions](https://gaashdaniel.github.io/Gaash-Web-Solutions/).
+
 ## Pages
 The website includes the following pages:
 1. **Coffee** - A showcase of my work, reflecting creativity and design elements.
