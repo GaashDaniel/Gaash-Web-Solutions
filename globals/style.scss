@@ -139,6 +139,8 @@ input[type="submit"] {
 
 
     #site-logo {
+        display: flex;
+        align-items: center;
         position: absolute;
         top: 0;
         inset-inline-start: 0;
@@ -146,6 +148,10 @@ input[type="submit"] {
         img {
             display: block;
             height: var(--nav-bar-height);
+        }
+
+        .my-name {
+            font-size: 2rem;
         }
     }
 

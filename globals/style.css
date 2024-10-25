@@ -123,6 +123,8 @@ input[type=submit] {
   color: #000;
 }
 .nav-bar #site-logo {
+  display: flex;
+  align-items: center;
   position: absolute;
   top: 0;
   inset-inline-start: 0;
@@ -130,6 +132,9 @@ input[type=submit] {
 .nav-bar #site-logo img {
   display: block;
   height: var(--nav-bar-height);
+}
+.nav-bar #site-logo .my-name {
+  font-size: 2rem;
 }
 .nav-bar #hamburger {
   display: none;

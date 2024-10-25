@@ -1,7 +1,7 @@
 ## Student Details
-First Name: Gaash
-Last Name: Daniel
-Phone Number: 052-4490278
+First Name: Gaash  
+Last Name: Daniel  
+Phone Number: 052-4490278  
 
 # Portfolio Website
 
