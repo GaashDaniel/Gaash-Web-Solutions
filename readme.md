@@ -17,6 +17,7 @@ The website includes the following pages:
 3. **Here And Now** - A page showcasing a real-time responsive design approach.
 4. **Free Consultation** - Information on services and consultation offerings.
 5. **Discover The World** - A visually engaging page designed to display content dynamically.
+6. **Football Games Travel Packs** - A dedicated page for football game travel packages, providing options and deals for fans.
 
 ## Technologies
 - **HTML** - For structuring content across pages.
