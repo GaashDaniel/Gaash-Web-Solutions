@@ -1,0 +1,23 @@
+.page-header .section-body {
+  flex-direction: column;
+}
+.page-header .section-body p {
+  font-size: 1.5em;
+  line-height: 1.5;
+  text-shadow: var(--text-shadow);
+  text-align: center;
+}
+.page-header .section-body .pair-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15em, min-content));
+  justify-content: center;
+  gap: inherit;
+}
+.page-header .section-body .pair-buttons .button {
+  font-size: 1.25em;
+}
+
+.project-screenshot img {
+  width: 100%;
+  border-radius: 2rem;
+}/*# sourceMappingURL=project-preview.css.map */
