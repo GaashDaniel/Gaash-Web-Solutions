@@ -1,0 +1,220 @@
+.hero-section {
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: 60vh;
+  background-image: url(../images/hero-section-background-img-dark-pink.jpg);
+  background-size: cover;
+}
+.hero-section .section-head {
+  font-family: "Cormorant Garamond", serif;
+  font-size: min(5rem, 15vw);
+}
+.hero-section .section-body blockquote {
+  font-style: italic;
+  font-size: min(1.5rem, 4.5vw);
+  text-shadow: var(--text-shadow);
+  padding: 1em;
+  border-radius: 1em;
+}
+.hero-section .section-body blockquote p:last-child {
+  text-align: start;
+  margin-top: 1lh;
+  font-size: 0.75em;
+}
+
+.about-me .section-body {
+  flex-direction: column;
+  align-items: center;
+}
+.about-me .img-and-text {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+}
+.about-me .img-and-text img {
+  height: 200px;
+  width: 200px;
+  border-radius: 999px;
+}
+.about-me .img-and-text p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+.about-me a.button {
+  flex-wrap: wrap;
+  font-size: 1.5rem;
+}
+.about-me a.button .coming-soon {
+  font-size: 0.65em;
+  font-weight: 400;
+  opacity: 0.6;
+  padding-inline-start: 0.5ch;
+}
+
+.static-design-projects,
+.javascript-projects {
+  min-height: 100px;
+  background-color: var(--alternative-section-shade);
+}
+.static-design-projects .section-body,
+.javascript-projects .section-body {
+  flex-direction: column;
+}
+.static-design-projects .section-body > p,
+.javascript-projects .section-body > p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  text-align: center;
+}
+.static-design-projects .section-body > p a,
+.javascript-projects .section-body > p a {
+  color: var(--primary-accent-color);
+  text-decoration: none;
+}
+.static-design-projects .cards,
+.javascript-projects .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(360px, 60vw), 1fr));
+  gap: 2em;
+}
+.static-design-projects .cards .card,
+.javascript-projects .cards .card {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  background-image: var(--geometric-pattern-url);
+  border-radius: 2em;
+  overflow: hidden;
+}
+.static-design-projects .cards .card img,
+.javascript-projects .cards .card img {
+  width: 100%;
+  aspect-ratio: 1.7777777778;
+}
+.static-design-projects .cards .card .details,
+.javascript-projects .cards .card .details {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+  padding: 2em;
+  text-align: center;
+}
+.static-design-projects .cards .card h3,
+.javascript-projects .cards .card h3 {
+  font-size: 2em;
+}
+.static-design-projects .cards .card p,
+.javascript-projects .cards .card p {
+  flex-grow: 1;
+  font-size: 1.25em;
+  line-height: 1.5;
+}
+.static-design-projects .cards .card .utilized-development-tools,
+.javascript-projects .cards .card .utilized-development-tools {
+  display: flex;
+  gap: 0.5em;
+}
+.static-design-projects .cards .card .utilized-development-tools i,
+.javascript-projects .cards .card .utilized-development-tools i {
+  font-size: 2em;
+}
+.static-design-projects .cards .card a,
+.javascript-projects .cards .card a {
+  font-size: 1.5em;
+}
+
+.contact-me .section-body {
+  align-items: center;
+  justify-content: space-between;
+}
+.contact-me .contact-form {
+  max-width: 600px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.contact-me .contact-form > p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  max-width: 32em;
+  margin-bottom: 1rem;
+}
+.contact-me .contact-form .pair {
+  display: flex;
+  flex-direction: column;
+}
+.contact-me .contact-form label {
+  font-weight: 600;
+  padding-bottom: 0.25rem;
+}
+.contact-me .contact-form label .optional {
+  font-size: 0.8em;
+  font-weight: normal;
+  opacity: 0.6;
+}
+.contact-me .contact-form .input {
+  width: 100%;
+  height: 2.5em;
+  font-family: inherit;
+  font-size: 1em;
+  border: 1px solid #767676;
+}
+.contact-me .contact-form .input:focus {
+  border-color: var(--primary-accent-color);
+  outline: none;
+}
+.contact-me .contact-form .input[data-valid=true] {
+  border-color: green;
+}
+.contact-me .contact-form .input[data-valid=false] {
+  border-color: #f46;
+}
+.contact-me .contact-form .input[data-valid=false] + .error-message {
+  display: block;
+}
+.contact-me .contact-form .error-message {
+  display: none;
+  height: 0;
+  font-size: 0.8em;
+  color: #f46;
+}
+.contact-me .contact-form #request {
+  height: 6lh;
+}
+.contact-me .contact-form button[type=submit] {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+}
+.contact-me .contact-form .confirm-message {
+  display: none;
+  align-self: center;
+  color: inherit;
+}
+.contact-me .mailbox {
+  font-size: min(50vmin, 600px);
+  height: 1em;
+  margin: -0.125em;
+  aspect-ratio: 1;
+}
+
+@media (max-width: 768px) {
+  .hero-section .section-body blockquote {
+    text-align: center;
+  }
+  .about-me .img-and-text {
+    flex-direction: column;
+    gap: inherit;
+  }
+  .about-me .img-and-text p {
+    font-size: 1.25rem;
+  }
+  .contact-me .section-body {
+    flex-direction: column-reverse;
+  }
+  .contact-me .section-body p {
+    font-size: 1.25rem;
+  }
+}/*# sourceMappingURL=home.css.map */

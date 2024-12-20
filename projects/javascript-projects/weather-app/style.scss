@@ -1,0 +1,118 @@
+$primary-color: #3498db;
+$secondary-color: #3ac635;
+$error-color: #e74c3c;
+$font-stack: 'Arial', sans-serif;
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center safe;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: $font-stack;
+    color-scheme: dark;
+    background-color: Canvas;
+    color: CanvasText;
+}
+
+.container {
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid $primary-color;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: $primary-color;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: darken($primary-color, 10%);
+    }
+}
+
+.weather-info {
+    margin-top: 20px;
+    min-height: 300px; // Set a minimum height to prevent layout shifts
+
+    img {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+
+        &:not([src]) {
+            opacity: 0;
+        }
+    }
+
+    .city {
+        font-size: 2em;
+        color: $secondary-color;
+        min-height: 1em;
+    }
+
+    .temp {
+        font-size: 1.5em;
+        min-height: 1em;
+    }
+
+    .description {
+        font-size: 1.2em;
+        color: darken($secondary-color, 20%);
+        min-height: 1em;
+    }
+
+    .error-message {
+        color: $error-color;
+        font-size: 1.2em;
+        min-height: 1em;
+        margin: 0;
+    }
+
+    .additional-info p {
+        min-height: 1em;
+    }
+}
+
+.autocomplete-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: none;
+    max-height: 150px;
+    overflow-y: auto;
+    position: absolute;
+    background-color: white;
+    width: calc(100% - 22px);
+    z-index: 1000;
+
+    li {
+        padding: 10px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $secondary-color;
+            color: white;
+        }
+    }
+}

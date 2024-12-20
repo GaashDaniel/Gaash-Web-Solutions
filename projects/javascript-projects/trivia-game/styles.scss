@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 8rem;
+    color-scheme: dark;
+    background-color: Canvas;
+    color: CanvasText;
+    font-family: tahoma;
+}
+
+button {
+    font-family: inherit;
+
+    &:not([disabled]):hover {
+        cursor: pointer;
+    }
+}
+
+.trivia-game {
+    display: flex;
+    flex-direction: column;
+    width: min(90%, 500px);
+    border-radius: 0.5rem;
+    background-color: #ddd3;
+    padding: 0.5rem;
+    gap: 0.5rem;
+
+    header {
+        position: relative;
+        text-align: center;
+
+        .restart-game {
+            aspect-ratio: 1;
+            border-radius: 999px;
+            position: absolute;
+            inset-inline-end: 0;
+            inset-block-start: 0;
+        }
+    }
+
+    button {
+        border-radius: 0.5rem;
+        border-style: none;
+        height: 1.5lh;
+
+        &:not([disabled]):hover {
+            background-color: hotpink;
+        }
+
+        &[disabled] {
+            color: inherit;
+        }
+    }
+
+    &:not([data-phase="category-selection"]) {
+        .categories-radio {
+            display: none;
+        }
+    }
+
+    &:not([data-phase="quiz"]) {
+        .question-and-answers {
+            display: none;
+        }
+    }
+
+    &:not([data-phase="summary"]) {
+        .summary {
+            display: none;
+        }
+    }
+
+    .header {
+        justify-self: center;
+    }
+
+    .categories-radio {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+
+        .category-buttons {
+            display: flex;
+            gap: 0.5rem;
+
+            .category {
+                flex-basis: 0;
+                flex-grow: 1;
+                border-radius: 0.5rem;
+            }
+        }
+    }
+
+    .question-and-answers {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        .progress {
+            text-align: center;
+        }
+
+        .question {
+            min-height: 2lh;
+        }
+
+        .answers {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+
+            .correct {
+                background-color: green;
+            }
+
+            .incorrect {
+                background-color: red;
+            }
+        }
+    }
+
+    .summary {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem
+    }
+}

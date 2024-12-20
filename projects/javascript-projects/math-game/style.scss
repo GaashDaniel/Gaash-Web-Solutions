@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color-scheme: dark;
+    background-color: Canvas;
+    color: CanvasText;
+    font-family: Arial, sans-serif;
+}
+
+.math-game {
+    display: flex;
+    flex-direction: column;
+    background: #fff2;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    gap: 1rem;
+
+    .equation-wrapper {
+        gap: 20px;
+    }
+
+    .equation {
+        font-size: 24px;
+        margin-right: 10px;
+    }
+
+    .answer {
+        width: 50px;
+        padding: 5px;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .button-wrapper {
+        gap: 20px;
+    }
+
+    .check,
+    .next {
+        padding: 10px 20px;
+        margin: 5px;
+        border: none;
+        border-radius: 5px;
+        background-color: #007bff;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .check:hover,
+    .next:hover {
+        background-color: #0056b3;
+    }
+
+    .result-sentence {
+        font-size: 18px;
+        height: 1lh;
+    }
+}

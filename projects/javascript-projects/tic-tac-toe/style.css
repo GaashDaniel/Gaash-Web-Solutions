@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color-scheme: dark;
+  background-color: Canvas;
+  color: CanvasText;
+}
+
+.tic-tac-toe {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  align-self: center;
+  text-align: center;
+  width: 300px;
+  gap: 1rem;
+}
+.tic-tac-toe .players {
+  display: flex;
+  justify-content: space-between;
+}
+.tic-tac-toe .players .player {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-inline: 0.5rem;
+  border: 2px solid rgba(0, 0, 0, 0);
+}
+.tic-tac-toe .players .player .symbol {
+  font-size: 2rem;
+  width: 1em;
+  height: 1lh;
+}
+.tic-tac-toe .players .player.player-1 .symbol {
+  text-align: left;
+}
+.tic-tac-toe .players .player.player-2 .symbol {
+  text-align: right;
+}
+.tic-tac-toe .players .player > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.tic-tac-toe[data-turn=player1] .player-1, .tic-tac-toe[data-turn=player2] .player-2 {
+  border-color: currentColor;
+}
+.tic-tac-toe .new-game {
+  align-self: center;
+  padding: 0.5rem;
+  background-color: #999;
+}
+.tic-tac-toe .game-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid currentColor;
+}
+.tic-tac-toe .game-grid .cell {
+  border: inherit;
+  aspect-ratio: 1;
+  background-color: inherit;
+  font-size: 3rem;
+}
+.tic-tac-toe .turn-indicator span {
+  font-weight: 900;
+}/*# sourceMappingURL=style.css.map */

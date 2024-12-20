@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    --primary-color: #007bff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    color-scheme: dark light;
+    background-color: Canvas;
+    color: CanvasText;
+}
+
+.to-do-list {
+    display: flex;
+    flex-direction: column;
+    width: 720px;
+    max-width: 100%;
+    gap: 1rem;
+
+    &[data-filter="active"] .task-row.completed {
+        display: none;
+    }
+
+    &[data-filter="completed"] .task-row:not(.completed) {
+        display: none;
+    }
+
+    button {
+        display: block;
+        aspect-ratio: 1;
+        height: 2lh;
+        font-size: inherit;
+        background-color: var(--primary-color);
+        border: none;
+        cursor: pointer;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .control-panel {
+        display: flex;
+        height: 2lh;
+
+        label {
+            height: 0;
+            width: 0;
+            overflow: hidden;
+        }
+
+        input {
+            flex-grow: 1;
+            margin-inline-end: 0.5em;
+        }
+
+
+    }
+
+    .tasks-header {
+        position: relative;
+
+        h2 {
+            text-align: center;
+            font-size: 1.5rem;
+        }
+
+        .task-filter {
+            position: absolute;
+            inset-inline-end: 0;
+            inset-block-start: 50%;
+            translate: 0 -50%;
+        }
+    }
+
+    .tasks {
+        .task-row {
+            display: flex;
+            gap: 0.5em;
+            min-height: 2lh;
+            align-items: center;
+            border: 1px solid white;
+
+            label {
+                display: grid;
+                place-items: center;
+                height: 2lh;
+                aspect-ratio: 1;
+                cursor: pointer;
+            }
+
+            input {
+                cursor: pointer;
+            }
+
+            .task-description {
+                flex-grow: 1;
+            }
+
+            button {
+                background-color: #0000;
+            }
+
+            i {
+                font-size: 1em;
+            }
+
+            .edit-task:hover {
+                color: var(--primary-color);
+            }
+
+            .delete-task:hover {
+                color: red;
+            }
+
+            &.completed .task-description {
+                text-decoration: line-through;
+                opacity: 0.6;
+            }
+
+        }
+    }
+}

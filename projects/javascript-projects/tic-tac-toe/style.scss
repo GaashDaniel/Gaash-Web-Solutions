@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color-scheme: dark;
+    background-color: Canvas;
+    color: CanvasText;
+}
+
+button {}
+
+.tic-tac-toe {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    align-self: center;
+    text-align: center;
+    width: 300px;
+    gap: 1rem;
+
+
+
+    .header {}
+
+    .description {}
+
+    .players {
+        display: flex;
+        justify-content: space-between;
+
+
+        .player {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding-inline: 0.5rem;
+            border: 2px solid #0000;
+
+            .symbol {
+                font-size: 2rem;
+                width: 1em;
+                height: 1lh;
+            }
+
+            &.player-1 .symbol {
+                text-align: left;
+            }
+
+            &.player-2 .symbol {
+                text-align: right;
+            }
+
+            >div {
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+
+                p {}
+
+            }
+        }
+    }
+
+    &[data-turn="player1"] .player-1,
+    &[data-turn="player2"] .player-2 {
+        border-color: currentColor;
+    }
+
+    .new-game {
+        align-self: center;
+        padding: 0.5rem;
+        background-color: #999;
+    }
+
+    .game-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        border: 1px solid currentColor;
+
+        .cell {
+            border: inherit;
+            aspect-ratio: 1;
+            background-color: inherit;
+            font-size: 3rem;
+        }
+    }
+
+    .turn-indicator {
+        span {
+            font-weight: 900;
+        }
+    }
+}

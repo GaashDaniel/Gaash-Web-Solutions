@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  --primary-color: #007bff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+  color-scheme: dark light;
+  background-color: Canvas;
+  color: CanvasText;
+}
+
+.to-do-list {
+  display: flex;
+  flex-direction: column;
+  width: 720px;
+  max-width: 100%;
+  gap: 1rem;
+}
+.to-do-list[data-filter=active] .task-row.completed {
+  display: none;
+}
+.to-do-list[data-filter=completed] .task-row:not(.completed) {
+  display: none;
+}
+.to-do-list button {
+  display: block;
+  aspect-ratio: 1;
+  height: 2lh;
+  font-size: inherit;
+  background-color: var(--primary-color);
+  border: none;
+  cursor: pointer;
+}
+.to-do-list h1 {
+  text-align: center;
+}
+.to-do-list .control-panel {
+  display: flex;
+  height: 2lh;
+}
+.to-do-list .control-panel label {
+  height: 0;
+  width: 0;
+  overflow: hidden;
+}
+.to-do-list .control-panel input {
+  flex-grow: 1;
+  margin-inline-end: 0.5em;
+}
+.to-do-list .tasks-header {
+  position: relative;
+}
+.to-do-list .tasks-header h2 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.to-do-list .tasks-header .task-filter {
+  position: absolute;
+  inset-inline-end: 0;
+  inset-block-start: 50%;
+  translate: 0 -50%;
+}
+.to-do-list .tasks .task-row {
+  display: flex;
+  gap: 0.5em;
+  min-height: 2lh;
+  align-items: center;
+  border: 1px solid white;
+}
+.to-do-list .tasks .task-row label {
+  display: grid;
+  place-items: center;
+  height: 2lh;
+  aspect-ratio: 1;
+  cursor: pointer;
+}
+.to-do-list .tasks .task-row input {
+  cursor: pointer;
+}
+.to-do-list .tasks .task-row .task-description {
+  flex-grow: 1;
+}
+.to-do-list .tasks .task-row button {
+  background-color: rgba(0, 0, 0, 0);
+}
+.to-do-list .tasks .task-row i {
+  font-size: 1em;
+}
+.to-do-list .tasks .task-row .edit-task:hover {
+  color: var(--primary-color);
+}
+.to-do-list .tasks .task-row .delete-task:hover {
+  color: red;
+}
+.to-do-list .tasks .task-row.completed .task-description {
+  text-decoration: line-through;
+  opacity: 0.6;
+}/*# sourceMappingURL=style.css.map */

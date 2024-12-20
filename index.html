@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaash - Web Solutions</title>
+    <link rel="stylesheet" href="globals/style.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="scripts/home.js" defer></script>
+</head>
+
+<body>
+    <nav class="nav-bar">
+        <div class="navburger">
+            <a class="hamburger"><i class="fa-solid fa-bars"></i></a>
+            <ul>
+                <li class="nav-tabs"><a href="#top">Home</a></li>
+                <li class="nav-tabs"><a href="#about-me">About</a></li>
+                <li class="nav-tabs"><a href="#services">Projects</a></li>
+                <li class="nav-tabs"><a href="#contact-me">Contact</a></li>
+            </ul>
+            <a class="close"><i class="fa-regular fa-circle-xmark"></i></a>
+        </div>
+        <a id="site-logo" class="nav-tabs" href=""><img src="images/my-logo.png" alt="logo"><span class="my-name">aash
+                Daniel</span></a>
+    </nav>
+    <section class="section hero-section">
+        <h1 class="section-head">Gaash<br>Web Solutions</h1>
+        <div class="section-body">
+            <blockquote>
+                <p>"Clean code always looks like it was written by someone who cares."</p>
+                <p>- Robert C. Martin</p>
+            </blockquote>
+        </div>
+    </section>
+    <section class="section development-tools">
+        <div class="section-body">
+            <i class="fa-brands fa-html5" title="HTML5" title="HTML5"></i>
+            <i class="fa-brands fa-css3-alt" title="CSS" title="CSS"></i>
+            <i class="fa-brands fa-sass" title="SCSS"></i>
+            <i class="fa-brands fa-square-js" title="JavaScript"></i>
+            <i title="Adobe XD" style="display: block;">
+                <svg style="display: block;" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="1em" height="1em"
+                    viewBox="0 0 24 24" fill="currentcolor">
+                    <path style="scale: 1.2; transform-origin: center;"
+                        d="M15.231,11.231c-0.305,0-0.527,0.123-0.668,0.369s-0.211,0.684-0.211,1.313v0.439c0,0.625,0.066,1.062,0.199,1.31 s0.357,0.372,0.674,0.372c0.328,0,0.576-0.146,0.744-0.439V11.7C15.806,11.388,15.56,11.231,15.231,11.231z M19,3H5 C3.896,3,3,3.895,3,5v14c0,1.105,0.896,2,2,2h14c1.104,0,2-0.895,2-2V5C21,3.895,20.104,3,19,3z M10.274,16.3l-1.172-2.982 L7.937,16.3H5.938l2.051-4.301l-2.01-4.23h1.975l1.148,2.93l1.148-2.93h1.975l-2.004,4.23l2.051,4.301H10.274z M17.64,16.3 h-1.506l-0.076-0.645c-0.34,0.508-0.777,0.762-1.313,0.762c-0.664,0-1.171-0.254-1.521-0.762s-0.528-1.254-0.536-2.238v-0.48 c0-1.039,0.176-1.814,0.527-2.326s0.863-0.768,1.535-0.768c0.488,0,0.895,0.211,1.219,0.633V7.3h1.67V16.3z">
+                    </path>
+                </svg>
+            </i>
+        </div>
+    </section>
+    <section id="about-me" class="section about-me">
+        <h2 class="section-head">About Me</h2>
+        <div class="section-body">
+            <div class="img-and-text">
+                <img src="images/profile-pic.webp" alt="profile pic">
+                <p>Hello, my name is Gaash, a full-stack developer.<br> With a passion for creating innovative
+                    solutions, I
+                    am learning
+                    and combining front-end and back-end technologies to offer efficient, clean, and cutting-edge
+                    technological
+                    solutions.</p>
+            </div>
+            <a class="button primary" _download _href=""><span>Download CV</span><span class="coming-soon">(Coming
+                    Soon)</span></a>
+        </div>
+    </section>
+    <section id="services" class="section static-design-projects">
+        <h2 class="section-head">My Projects</h2>
+        <div class="section-body">
+            <p>Here are some of my static design projects that showcase my skills in creating visually appealing and
+                responsive web pages. <br>Like one? Let me know via the <a href="#contact-me">Contact Me</a> form.</p>
+            <div class="cards">
+                <div class="card">
+                    <img src="images/project-previews/previews-static-design-projects/preview-coffee.webp"
+                        alt="preview coffee">
+                    <div class="details">
+                        <h3>Coffee</h3>
+                        <p>A visually appealing page offering a free coffee coupon. Built using HTML, CSS, and Adobe XD,
+                            it features a clean,
+                            responsive design that adapts seamlessly to mobile and desktop platforms.</p>
+                        <div class="utilized-development-tools">
+                            <i class="fa-brands fa-html5" title="HTML5" title="HTML5"></i>
+                            <i class="fa-brands fa-css3-alt" title="CSS" title="CSS"></i>
+                            <i title="Adobe XD" style="display: block;">
+                                <svg style="display: block;" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                    width="1em" height="1em" viewBox="0 0 24 24" fill="currentcolor">
+                                    <path style="scale: 1.2; transform-origin: center;"
+                                        d="M15.231,11.231c-0.305,0-0.527,0.123-0.668,0.369s-0.211,0.684-0.211,1.313v0.439c0,0.625,0.066,1.062,0.199,1.31 s0.357,0.372,0.674,0.372c0.328,0,0.576-0.146,0.744-0.439V11.7C15.806,11.388,15.56,11.231,15.231,11.231z M19,3H5 C3.896,3,3,3.895,3,5v14c0,1.105,0.896,2,2,2h14c1.104,0,2-0.895,2-2V5C21,3.895,20.104,3,19,3z M10.274,16.3l-1.172-2.982 L7.937,16.3H5.938l2.051-4.301l-2.01-4.23h1.975l1.148,2.93l1.148-2.93h1.975l-2.004,4.23l2.051,4.301H10.274z M17.64,16.3 h-1.506l-0.076-0.645c-0.34,0.508-0.777,0.762-1.313,0.762c-0.664,0-1.171-0.254-1.521-0.762s-0.528-1.254-0.536-2.238v-0.48 c0-1.039,0.176-1.814,0.527-2.326s0.863-0.768,1.535-0.768c0.488,0,0.895,0.211,1.219,0.633V7.3h1.67V16.3z">
+                                    </path>
+                                </svg>
+                            </i>
+                        </div>
+                        <a class="button secondary" href="projects/static-design-projects/previews/coffee/">Show
+                            More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/project-previews/previews-static-design-projects/preview-discover-the-world.webp"
+                        alt="preview Discover The World">
+                    <div class="details">
+                        <h3>Discover The World</h3>
+                        <p>
+                            A travel-focused page showcasing global destinations. Created with HTML, CSS, and Adobe XD,
+                            it offers a vibrant,
+                            responsive layout that captivates users on both mobile and desktop platforms.
+                        </p>
+                        <div class="utilized-development-tools">
+                            <i class="fa-brands fa-html5" title="HTML5"></i>
+                            <i class="fa-brands fa-css3-alt" title="CSS"></i>
+                            <i title="Adobe XD" style="display: block;">
+                                <svg style="display: block;" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                    width="1em" height="1em" viewBox="0 0 24 24" fill="currentcolor">
+                                    <path style="scale: 1.2; transform-origin: center;"
+                                        d="M15.231,11.231c-0.305,0-0.527,0.123-0.668,0.369s-0.211,0.684-0.211,1.313v0.439c0,0.625,0.066,1.062,0.199,1.31 s0.357,0.372,0.674,0.372c0.328,0,0.576-0.146,0.744-0.439V11.7C15.806,11.388,15.56,11.231,15.231,11.231z M19,3H5 C3.896,3,3,3.895,3,5v14c0,1.105,0.896,2,2,2h14c1.104,0,2-0.895,2-2V5C21,3.895,20.104,3,19,3z M10.274,16.3l-1.172-2.982 L7.937,16.3H5.938l2.051-4.301l-2.01-4.23h1.975l1.148,2.93l1.148-2.93h1.975l-2.004,4.23l2.051,4.301H10.274z M17.64,16.3 h-1.506l-0.076-0.645c-0.34,0.508-0.777,0.762-1.313,0.762c-0.664,0-1.171-0.254-1.521-0.762s-0.528-1.254-0.536-2.238v-0.48 c0-1.039,0.176-1.814,0.527-2.326s0.863-0.768,1.535-0.768c0.488,0,0.895,0.211,1.219,0.633V7.3h1.67V16.3z">
+                                    </path>
+                                </svg>
+                            </i>
+                        </div>
+                        <a class="button secondary"
+                            href="projects/static-design-projects/previews/discover-the-world/">Show More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/project-previews/previews-static-design-projects/preview-free-consultation.webp"
+                        alt="preview free consultation">
+                    <div class="details">
+                        <h3>Free Consultation</h3>
+                        <p>
+                            A landing page offering free consultations, developed using HTML, CSS, and Adobe XD. It
+                            features a mobile-first design,
+                            ensuring optimal user experience on both phones and desktop computers.
+                        </p>
+                        <div class="utilized-development-tools">
+                            <i class="fa-brands fa-html5" title="HTML5"></i>
+                            <i class="fa-brands fa-css3-alt" title="CSS"></i>
+                            <i title="Adobe XD" style="display: block;">
+                                <svg style="display: block;" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                    width="1em" height="1em" viewBox="0 0 24 24" fill="currentcolor">
+                                    <path style="scale: 1.2; transform-origin: center;"
+                                        d="M15.231,11.231c-0.305,0-0.527,0.123-0.668,0.369s-0.211,0.684-0.211,1.313v0.439c0,0.625,0.066,1.062,0.199,1.31 s0.357,0.372,0.674,0.372c0.328,0,0.576-0.146,0.744-0.439V11.7C15.806,11.388,15.56,11.231,15.231,11.231z M19,3H5 C3.896,3,3,3.895,3,5v14c0,1.105,0.896,2,2,2h14c1.104,0,2-0.895,2-2V5C21,3.895,20.104,3,19,3z M10.274,16.3l-1.172-2.982 L7.937,16.3H5.938l2.051-4.301l-2.01-4.23h1.975l1.148,2.93l1.148-2.93h1.975l-2.004,4.23l2.051,4.301H10.274z M17.64,16.3 h-1.506l-0.076-0.645c-0.34,0.508-0.777,0.762-1.313,0.762c-0.664,0-1.171-0.254-1.521-0.762s-0.528-1.254-0.536-2.238v-0.48 c0-1.039,0.176-1.814,0.527-2.326s0.863-0.768,1.535-0.768c0.488,0,0.895,0.211,1.219,0.633V7.3h1.67V16.3z">
+                                    </path>
+                                </svg>
+                            </i>
+                        </div>
+                        <a class="button secondary"
+                            href="projects/static-design-projects/previews/free-consultation/">Show More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/project-previews/previews-static-design-projects/preview-here-and-now.webp"
+                        alt="preview here and now">
+                    <div class="details">
+                        <h3>Here And Now</h3>
+                        <p>
+                            A page offering gifts and surprises. Developed with HTML and CSS, based on an Adobe XD
+                            design. It features a
+                            responsive layout that works perfectly on all devices.
+                        </p>
+                        <div class="utilized-development-tools">
+                            <i class="fa-brands fa-html5" title="HTML5"></i>
+                            <i class="fa-brands fa-css3-alt" title="CSS"></i>
+                            <i title="Adobe XD" style="display: block;">
+                                <svg style="display: block;" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                    width="1em" height="1em" viewBox="0 0 24 24" fill="currentcolor">
+                                    <path style="scale: 1.2; transform-origin: center;"
+                                        d="M15.231,11.231c-0.305,0-0.527,0.123-0.668,0.369s-0.211,0.684-0.211,1.313v0.439c0,0.625,0.066,1.062,0.199,1.31 s0.357,0.372,0.674,0.372c0.328,0,0.576-0.146,0.744-0.439V11.7C15.806,11.388,15.56,11.231,15.231,11.231z M19,3H5 C3.896,3,3,3.895,3,5v14c0,1.105,0.896,2,2,2h14c1.104,0,2-0.895,2-2V5C21,3.895,20.104,3,19,3z M10.274,16.3l-1.172-2.982 L7.937,16.3H5.938l2.051-4.301l-2.01-4.23h1.975l1.148,2.93l1.148-2.93h1.975l-2.004,4.23l2.051,4.301H10.274z M17.64,16.3 h-1.506l-0.076-0.645c-0.34,0.508-0.777,0.762-1.313,0.762c-0.664,0-1.171-0.254-1.521-0.762s-0.528-1.254-0.536-2.238v-0.48 c0-1.039,0.176-1.814,0.527-2.326s0.863-0.768,1.535-0.768c0.488,0,0.895,0.211,1.219,0.633V7.3h1.67V16.3z">
+                                    </path>
+                                </svg>
+                            </i>
+                        </div>
+                        <a class="button secondary" href="projects/static-design-projects/previews/here-and-now/">Show
+                            More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/project-previews/previews-static-design-projects/preview-let-us-lead-you-forward-v1.webp"
+                        alt="preview let us lead you forward blue">
+                    <div class="details">
+                        <h3>Lead You Forward</h3>
+                        <p>
+                            A leadership services landing page designed with Adobe XD and developed using HTML and CSS.
+                            It’s responsive, focusing on
+                            user engagement and clear calls-to-action across devices.
+                        </p>
+                        <div class="utilized-development-tools">
+                            <i class="fa-brands fa-html5" title="HTML5"></i>
+                            <i class="fa-brands fa-css3-alt" title="CSS"></i>
+                            <i title="Adobe XD" style="display: block;">
+                                <svg style="display: block;" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                    width="1em" height="1em" viewBox="0 0 24 24" fill="currentcolor">
+                                    <path style="scale: 1.2; transform-origin: center;"
+                                        d="M15.231,11.231c-0.305,0-0.527,0.123-0.668,0.369s-0.211,0.684-0.211,1.313v0.439c0,0.625,0.066,1.062,0.199,1.31 s0.357,0.372,0.674,0.372c0.328,0,0.576-0.146,0.744-0.439V11.7C15.806,11.388,15.56,11.231,15.231,11.231z M19,3H5 C3.896,3,3,3.895,3,5v14c0,1.105,0.896,2,2,2h14c1.104,0,2-0.895,2-2V5C21,3.895,20.104,3,19,3z M10.274,16.3l-1.172-2.982 L7.937,16.3H5.938l2.051-4.301l-2.01-4.23h1.975l1.148,2.93l1.148-2.93h1.975l-2.004,4.23l2.051,4.301H10.274z M17.64,16.3 h-1.506l-0.076-0.645c-0.34,0.508-0.777,0.762-1.313,0.762c-0.664,0-1.171-0.254-1.521-0.762s-0.528-1.254-0.536-2.238v-0.48 c0-1.039,0.176-1.814,0.527-2.326s0.863-0.768,1.535-0.768c0.488,0,0.895,0.211,1.219,0.633V7.3h1.67V16.3z">
+                                    </path>
+                                </svg>
+                            </i>
+                        </div>
+                        <a class="button secondary"
+                            href="projects/static-design-projects/previews/let-us-lead-you-forward-v1/">Show
+                            More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/project-previews/previews-static-design-projects/preview-let-us-lead-you-forward-v2.webp"
+                        alt="preview let us lead you forward pink">
+                    <div class="details">
+                        <h3>Lead You Forward</h3>
+                        <p>
+                            An updated version of the leadership landing page, created with HTML, CSS, and Adobe XD. It
+                            includes refined design
+                            elements and improved responsiveness for a smoother user experience.
+                        </p>
+                        <div class="utilized-development-tools">
+                            <i class="fa-brands fa-html5" title="HTML5"></i>
+                            <i class="fa-brands fa-css3-alt" title="CSS"></i>
+                            <i title="Adobe XD" style="display: block;">
+                                <svg style="display: block;" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                    width="1em" height="1em" viewBox="0 0 24 24" fill="currentcolor">
+                                    <path style="scale: 1.2; transform-origin: center;"
+                                        d="M15.231,11.231c-0.305,0-0.527,0.123-0.668,0.369s-0.211,0.684-0.211,1.313v0.439c0,0.625,0.066,1.062,0.199,1.31 s0.357,0.372,0.674,0.372c0.328,0,0.576-0.146,0.744-0.439V11.7C15.806,11.388,15.56,11.231,15.231,11.231z M19,3H5 C3.896,3,3,3.895,3,5v14c0,1.105,0.896,2,2,2h14c1.104,0,2-0.895,2-2V5C21,3.895,20.104,3,19,3z M10.274,16.3l-1.172-2.982 L7.937,16.3H5.938l2.051-4.301l-2.01-4.23h1.975l1.148,2.93l1.148-2.93h1.975l-2.004,4.23l2.051,4.301H10.274z M17.64,16.3 h-1.506l-0.076-0.645c-0.34,0.508-0.777,0.762-1.313,0.762c-0.664,0-1.171-0.254-1.521-0.762s-0.528-1.254-0.536-2.238v-0.48 c0-1.039,0.176-1.814,0.527-2.326s0.863-0.768,1.535-0.768c0.488,0,0.895,0.211,1.219,0.633V7.3h1.67V16.3z">
+                                    </path>
+                                </svg>
+                            </i>
+                        </div>
+                        <a class="button secondary"
+                            href="projects/static-design-projects/previews/let-us-lead-you-forward-v2/">Show
+                            More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/project-previews/previews-static-design-projects/preview-football-games-travel-packs.webp"
+                        alt="preview football games travel packs">
+                    <div class="details">
+                        <h3>Football Games Travel Packs</h3>
+                        <p>
+                            A dedicated page for football travel packages, crafted with HTML, CSS, and SCSS. It features
+                            a dynamic, responsive
+                            design optimized for mobile and desktop viewing.
+                        </p>
+                        <div class="utilized-development-tools">
+                            <i class="fa-brands fa-html5" title="HTML5"></i>
+                            <i class="fa-brands fa-css3-alt" title="CSS"></i>
+                            <i class="fa-brands fa-sass" title="SCSS"></i>
+                        </div>
+                        <a class="button secondary"
+                            href="projects/static-design-projects/previews/football-games-travel-packs/">Show
+                            More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section javascript-projects">
+        <h2 class="section-head">JavaScript Projects</h2>
+        <div class="section-body">
+            <p>Here are some of my JavaScript projects that showcase my skills in creating dynamic and interactive web
+                applications. <br>Like one? Let me know via the <a href="#contact-me">Contact Me</a> form.</p>
+            <div class="cards">
+                <div class="card">
+                    <img src="images/project-previews/previews-javascript-projects/tic-tac-toe.webp"
+                        alt="preview tic-tac-toe">
+                    <div class="details">
+                        <h3>Tic-Tac-Toe</h3>
+                        <p>
+                            An interactive Tic-Tac-Toe game built with HTML, CSS, SASS, and JavaScript. It features a
+                            sleek
+                            design and responsive
+                            gameplay for all devices.
+                        </p>
+                        <div class="utilized-development-tools">
+                            <i class="fa-brands fa-html5" title="HTML5"></i>
+                            <i class="fa-brands fa-css3-alt" title="CSS"></i>
+                            <i class="fa-brands fa-sass" title="SCSS"></i>
+                            <i class="fa-brands fa-square-js" title="JavaScript"></i>
+                        </div>
+                        <a class="button secondary" href="projects/javascript-projects/previews/tic-tac-toe/">Show
+                            More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/project-previews/previews-javascript-projects/pokedex.webp" alt="preview pokedex">
+                    <div class="details">
+                        <h3>Pokédex</h3>
+                        <p>
+                            An API-powered Pokédex built with HTML, CSS, SASS, and JavaScript. It provides dynamic
+                            Pokémon data with a user-friendly and responsive interface.
+                        </p>
+                        <div class="utilized-development-tools">
+                            <i class="fa-brands fa-html5" title="HTML5"></i>
+                            <i class="fa-brands fa-css3-alt" title="CSS"></i>
+                            <i class="fa-brands fa-sass" title="SCSS"></i>
+                            <i class="fa-brands fa-square-js" title="JavaScript"></i>
+                        </div>
+                        <a class="button secondary" href="projects/javascript-projects/previews/pokedex/">Show More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/project-previews/previews-javascript-projects/trivia-game.webp"
+                        alt="preview trivia">
+                    <div class="details">
+                        <h3>Trivia</h3>
+                        <p>
+                            An engaging trivia game on sports, movies, music, history, or a random mix. Built with HTML,
+                            CSS, SASS, and JavaScript,
+                            offering fun and dynamic gameplay.
+                        </p>
+                        <div class="utilized-development-tools">
+                            <i class="fa-brands fa-html5" title="HTML5"></i>
+                            <i class="fa-brands fa-css3-alt" title="CSS"></i>
+                            <i class="fa-brands fa-sass" title="SCSS"></i>
+                            <i class="fa-brands fa-square-js" title="JavaScript"></i>
+                        </div>
+                        <a class="button secondary" href="projects/javascript-projects/previews/trivia-game/">Show
+                            More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/project-previews/previews-javascript-projects/weather-app.webp"
+                        alt="preview weather app">
+                    <div class="details">
+                        <h3>Weather App</h3>
+                        <p>
+                            An API-based weather app created using HTML, CSS, SASS, and JavaScript. It provides
+                            real-time weather data for any city
+                            worldwide in a sleek, responsive design.
+                        </p>
+                        <div class="utilized-development-tools">
+                            <i class="fa-brands fa-html5" title="HTML5"></i>
+                            <i class="fa-brands fa-css3-alt" title="CSS"></i>
+                            <i class="fa-brands fa-sass" title="SCSS"></i>
+                            <i class="fa-brands fa-square-js" title="JavaScript"></i>
+                        </div>
+                        <a class="button secondary" href="projects/javascript-projects/previews/weather-app/">Show
+                            More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/project-previews/previews-javascript-projects/math-game.webp"
+                        alt="preview math game">
+                    <div class="details">
+                        <h3>Math Game</h3>
+                        <p>
+                            An infinite math challenge generating random arithmetic problems (+, -, *, /).Developed with
+                            HTML, CSS, SASS, and JavaScript for seamless, interactive play on all devices.
+                        </p>
+                        <div class="utilized-development-tools">
+                            <i class="fa-brands fa-html5" title="HTML5"></i>
+                            <i class="fa-brands fa-css3-alt" title="CSS"></i>
+                            <i class="fa-brands fa-sass" title="SCSS"></i>
+                            <i class="fa-brands fa-square-js" title="JavaScript"></i>
+                        </div>
+                        <a class="button secondary" href="projects/javascript-projects/previews/math-game/">Show
+                            More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/project-previews/previews-javascript-projects/to-do-list.webp"
+                        alt="preview to do list">
+                    <div class="details">
+                        <h3>To Do List</h3>
+                        <p>
+                            A user-friendly To-Do List app built with HTML, CSS, SASS, and JavaScript. It enables task
+                            management with a clean,
+                            responsive interface for all devices.
+                        </p>
+                        <div class="utilized-development-tools">
+                            <i class="fa-brands fa-html5" title="HTML5"></i>
+                            <i class="fa-brands fa-css3-alt" title="CSS"></i>
+                            <i class="fa-brands fa-sass" title="SCSS"></i>
+                            <i class="fa-brands fa-square-js" title="JavaScript"></i>
+                        </div>
+                        <a class="button secondary" href="projects/javascript-projects/previews/to-do-list/">Show
+                            More</a>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section id="contact-me" class="section contact-me">
+        <h2 class="section-head">Contact Me</h2>
+        <div class="section-body">
+            <form class="contact-form">
+                <p>Share your projects with me, and I'll respond with a personalized proposal tailored to your needs.
+                </p>
+                <div class="pair">
+                    <label for="full-name">Full Name</label>
+                    <input id="full-name" class="input" type="text" data-valid="" required>
+                    <p class="error-message">* Full name must be alphabetical only and 2-64 characters!</p>
+                </div>
+                <div class="pair">
+                    <label for="email">Email</label>
+                    <input id="email" class="input" type="email" data-valid="" required>
+                    <p class="error-message">* Email must be valid!</p>
+                </div>
+                <div class="pair">
+                    <label for="telephone">Phone Number</label>
+                    <input id="telephone" class="input" type="tel" data-valid="" required>
+                    <p class="error-message">* Phone number must be valid!</p>
+                </div>
+                <div class="pair">
+                    <label for="message">Request <span class="optional">(optional)</span></label>
+                    <textarea id="message" class="input" data-valid=""></textarea>
+                    <p class="error-message">* Max 400 characters!</p>
+                </div>
+                <button class="button primary" type="submit">Submit</button>
+                <p class="confirm-message">Your request was sent!</p>
+            </form>
+            <img class="mailbox" src="images/mailbox.svg" alt="mailbox">
+        </div>
+    </section>
+    <footer class="section footer">
+        <div class="section-body">
+            <p><span>Designed and Built by: </span><span class="highlight">Gaash Web Solutions</span></p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="trivia-game" data-phase="category-selection">
+        <header>
+            <h1 class="header">Trivia Game</h1>
+            <button class="restart-game" title="Restart Game">⟳</button>
+        </header>
+        <div class="categories-radio">
+            <p>Choose Category</p>
+            <div class="category-buttons">
+                <button class="category" data-category="sports">Sport</button>
+                <button class="category" data-category="music">Music</button>
+                <button class="category" data-category="movies">Movies</button>
+                <button class="category" data-category="history">History</button>
+                <button class="category" data-category="all">All</button>
+            </div>
+        </div>
+        <div class="question-and-answers">
+            <p class="progress"></p>
+            <p class="question"></p>
+            <div class="answers">
+                <button class="answer"></button>
+                <button class="answer"></button>
+                <button class="answer"></button>
+                <button class="answer"></button>
+            </div>
+            <button class="next">Next Question</button>
+        </div>
+        <div class="summary">
+            <p>Your Score Is:</p>
+            <p class="score">XX/100</p>
+            <button class="play-again">Play Again!</button>
+        </div>
+    </div>
+</body>
+
+</html>
